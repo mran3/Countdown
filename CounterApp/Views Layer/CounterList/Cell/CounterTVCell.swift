@@ -10,7 +10,9 @@ import UIKit
 // MARK: - CounterCellDelegate
 
 protocol CounterCellDelegate: class {
-    func updateModel(model: Counter)
+//    func updateModel(model: Counter)
+    func increaseCounter(counterId: String)
+    func decreaseCounter(counterId: String)
 }
 
 final class CounterTVCell: UITableViewCell {
@@ -86,9 +88,14 @@ final class CounterTVCell: UITableViewCell {
     // MARK: - IBAction
     
     @IBAction fileprivate func stepperAction(_ sender: Any) {
+        let newValue = Int(stepperView.value)
+        if newValue > cellModel.count {
+            delegate.increaseCounter(counterId: cellModel.id)
+        } else {
+            delegate.decreaseCounter(counterId: cellModel.id)
+        }
         countLabel.text = String(Int(stepperView.value))
         cellModel.count = Int(stepperView.value)
         countLabel.textColor = cellModel.count == 0 ? AppColors.inactiveCountLabelColor.color : AppColors.mainTintColor.color
-        delegate.updateModel(model: cellModel)
     }
 }

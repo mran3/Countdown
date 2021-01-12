@@ -148,7 +148,6 @@ extension CreateCounterVC: CreateCounterView {
         }))
 
         self.present(alert, animated: true)
-        
     }
 }
 

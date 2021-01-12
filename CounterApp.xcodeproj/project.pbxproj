@@ -34,6 +34,7 @@
 		22936D7925AD324A005A30EF /* CreateCounterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22936D7825AD324A005A30EF /* CreateCounterPresenter.swift */; };
 		22936D7D25AD32A5005A30EF /* LocalCounterDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22936D7C25AD32A5005A30EF /* LocalCounterDataService.swift */; };
 		22936D8225AD367A005A30EF /* ExamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22936D8125AD367A005A30EF /* ExamplePresenter.swift */; };
+		8603C7D525AD94D7005CA48E /* String+html.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603C7D425AD94D7005CA48E /* String+html.swift */; };
 		861273F425AD794D00289BD8 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861273F325AD794D00289BD8 /* WelcomeVC.swift */; };
 		862BE80925AD573800D12087 /* corner.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 862BE80825AD573800D12087 /* corner.jpeg */; };
 		86C8F81F25AD3F040056AF3D /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 86C8F81E25AD3F040056AF3D /* Moya */; };
@@ -70,6 +71,7 @@
 		22936D7825AD324A005A30EF /* CreateCounterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCounterPresenter.swift; sourceTree = "<group>"; };
 		22936D7C25AD32A5005A30EF /* LocalCounterDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCounterDataService.swift; sourceTree = "<group>"; };
 		22936D8125AD367A005A30EF /* ExamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresenter.swift; sourceTree = "<group>"; };
+		8603C7D425AD94D7005CA48E /* String+html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+html.swift"; sourceTree = "<group>"; };
 		861273F325AD794D00289BD8 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		862BE80825AD573800D12087 /* corner.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corner.jpeg; sourceTree = "<group>"; };
 		86C8F82125AD3F5F0056AF3D /* CounterAPITarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterAPITarget.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				228B959A25A690DF00FBF8FE /* Ext+Array.swift */,
+				8603C7D425AD94D7005CA48E /* String+html.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				229367DC25A9D161005A30EF /* ExamplesCVCell.swift in Sources */,
 				229367D325A9D13D005A30EF /* ExamplesTVCell.swift in Sources */,
 				229367CD25A8CE6A005A30EF /* ExamplesVC.swift in Sources */,
+				8603C7D525AD94D7005CA48E /* String+html.swift in Sources */,
 				228B956525A4FA6800FBF8FE /* CountersListVC.swift in Sources */,
 				228B957725A4FF6F00FBF8FE /* CreateCounterVC.swift in Sources */,
 				228B959725A5F9A000FBF8FE /* UserDefaultsHelper.swift in Sources */,

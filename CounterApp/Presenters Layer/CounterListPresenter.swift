@@ -16,6 +16,7 @@ protocol CountersListView: class {
     func openShareController(textToShare: [String])
     func deleteCounters(_ newModelsArr: [Counter])
     func updateCountersArr(newArr: [Counter])
+    func showAlert()
 }
 
 class CounterListPresenter {
@@ -81,6 +82,7 @@ class CounterListPresenter {
         
     }
     
+    
     func refreshData() {
         self.getCounters()
     }
@@ -88,15 +90,28 @@ class CounterListPresenter {
     func saveCounters(_ models: [Counter]) {
         localService.saveCounters(models)
     }
+
     
-    func updateCounter(allModels: [Counter], modelToUpdate: Counter) {
-        var newArr = allModels
-        for (index, element) in allModels.enumerated() {
-            if element.id == modelToUpdate.id {
-                newArr[index] = modelToUpdate
+    func increaseCounter(counterId: String) {
+        remoteService.increaseCounter(counterId: counterId) { result in
+            switch (result) {
+            case .success:
+                self.refreshData()
+            case .failure:
+                self.countersView.showAlert()
             }
         }
-        countersView.updateCountersArr(newArr: newArr)
+    }
+    
+    func decreaseCounter(counterId: String) {
+        remoteService.decreaseCounter(counterId: counterId) { result in
+            switch (result) {
+            case .success:
+                self.refreshData()
+            case .failure:
+                self.countersView.showAlert()
+            }
+        }
     }
     
     func shareSelectedCountersText(for modelsToShare: [Counter]) {

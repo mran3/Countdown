@@ -50,4 +50,16 @@ class RemoteCounterService {
         }
     }
     
+    func increaseCounter(counterId: String, completion: @escaping (Result<Response, MoyaError>) -> ()){
+        provider.request(.increment(counterId: counterId)) { result in
+            completion(result)
+        }
+    }
+    
+    func decreaseCounter(counterId: String, completion: @escaping (Result<Response, MoyaError>) -> ()){
+        provider.request(.decrement(counterId: counterId)) { result in
+            completion(result)
+        }
+    }
+    
 }

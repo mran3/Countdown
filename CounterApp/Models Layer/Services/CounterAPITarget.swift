@@ -13,13 +13,17 @@ enum CounterAPITarget: TargetType {
     case list
     case create(title: String)
     case delete(deletionId: String)
-    case increment
-    case decrement
+    case increment(counterId: String)
+    case decrement(counterId: String)
     
     var path: String {
         switch self {
         case .list:
             return "/counters"
+        case .increment:
+            return "/counter/inc"
+        case .decrement:
+            return "/counter/dec"
         default:
             return "/counter"
         }
@@ -50,6 +54,10 @@ enum CounterAPITarget: TargetType {
             return .requestParameters(parameters: ["title": title], encoding: JSONEncoding.default)
         case .delete (let deletionId):
             return .requestParameters(parameters: ["id": deletionId], encoding: JSONEncoding.default)
+        case .increment(let counterId):
+            return .requestParameters(parameters: ["id": counterId], encoding: JSONEncoding.default)
+        case .decrement(let counterId):
+            return .requestParameters(parameters: ["id": counterId], encoding: JSONEncoding.default)
         default:
             return .requestPlain
         }

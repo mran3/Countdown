@@ -210,6 +210,14 @@ extension CountersListVC {
         optionMenu.addAction(cancelAction)
         self.present(optionMenu, animated: true, completion: nil)
     }
+    
+    func showAlert(){
+        let alert = UIAlertController(title: "Couldn't create the counter", message: "The Internet connection appears to be offline.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: { action in
+        }))
+
+        self.present(alert, animated: true)
+    }
 }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
@@ -279,8 +287,11 @@ extension CountersListVC: CreateCounterDelegate {
 // MARK: - CounterCellDelegate
 
 extension CountersListVC: CounterCellDelegate {
-    func updateModel(model: Counter) {
-        counterListPresenter.updateCounter(allModels: models, modelToUpdate: model)
+    func increaseCounter(counterId: String) {
+        counterListPresenter.increaseCounter(counterId: counterId)
+    }
+    func decreaseCounter(counterId: String) {
+        counterListPresenter.decreaseCounter(counterId: counterId)
     }
 }
 
