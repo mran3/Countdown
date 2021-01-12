@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExamplesTVCell" id="yIi-iy-u1n" customClass="ExamplesTVCell" customModule="CounterApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="640" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yIi-iy-u1n" id="iCA-jZ-vf3">
+                <rect key="frame" x="0.0" y="0.0" width="640" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uh3-Mi-m5C">
+                        <rect key="frame" x="23" y="34" width="33" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="FIX-cq-NQv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Hl3-oO-30G">
+                        <rect key="frame" x="0.0" y="60" width="640" height="55"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="Vam-qg-oZ7"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="16" minimumInteritemSpacing="16" id="Ak3-Qo-fab">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Hl3-oO-30G" secondAttribute="bottom" id="3n5-wa-Kz0"/>
+                    <constraint firstItem="uh3-Mi-m5C" firstAttribute="top" secondItem="iCA-jZ-vf3" secondAttribute="top" constant="34" id="ZWf-fo-8a7"/>
+                    <constraint firstItem="uh3-Mi-m5C" firstAttribute="leading" secondItem="iCA-jZ-vf3" secondAttribute="leading" constant="23" id="jQd-qI-bM6"/>
+                    <constraint firstAttribute="trailing" secondItem="Hl3-oO-30G" secondAttribute="trailing" id="meM-9N-dXr"/>
+                    <constraint firstItem="Hl3-oO-30G" firstAttribute="top" secondItem="uh3-Mi-m5C" secondAttribute="bottom" constant="10" id="ppQ-FV-qgK"/>
+                    <constraint firstItem="Hl3-oO-30G" firstAttribute="leading" secondItem="iCA-jZ-vf3" secondAttribute="leading" id="uyd-PN-ycO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="exampleCollectionView" destination="Hl3-oO-30G" id="g8F-mx-oFp"/>
+                <outlet property="titleLabel" destination="uh3-Mi-m5C" id="mMS-ch-Qth"/>
+            </connections>
+            <point key="canvasLocation" x="253.62318840579712" y="56.584821428571423"/>
+        </tableViewCell>
+    </objects>
+</document>

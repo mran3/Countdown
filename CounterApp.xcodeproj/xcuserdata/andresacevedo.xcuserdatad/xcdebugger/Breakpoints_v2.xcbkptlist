@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D1D44BCD-7F35-4CFF-A268-A927674DEB2C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D13A18CA-D0F1-4C65-96CA-AFAB1CA401A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CounterApp/Presenters/CounterListPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "deleteCounters(allModels:modelToDelete:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D13A18CA-D0F1-4C65-96CA-AFAB1CA401A1 - 446055768dc9f7b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CounterApp.CounterListPresenter.deleteCounters(allModels: Swift.Array&lt;CounterApp.Counter&gt;, modelToDelete: Swift.Array&lt;CounterApp.Counter&gt;) -&gt; ()"
+                  moduleName = "CounterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andresacevedo/Documents/Cornershop/Countdown/CounterApp/Presenters/CounterListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "127">
+               </Location>
+               <Location
+                  uuid = "D13A18CA-D0F1-4C65-96CA-AFAB1CA401A1 - 85c78063f74ded63"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in CounterApp.CounterListPresenter.deleteCounters(allModels: Swift.Array&lt;CounterApp.Counter&gt;, modelToDelete: Swift.Array&lt;CounterApp.Counter&gt;) -&gt; ()"
+                  moduleName = "CounterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andresacevedo/Documents/Cornershop/Countdown/CounterApp/Presenters/CounterListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "65">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34A642A2-0BB8-4F79-A50A-EBBF954770F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CounterApp/Models/CounterModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "deleteCounter(deletionId:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "34A642A2-0BB8-4F79-A50A-EBBF954770F2 - 7ad4fd509897ec34"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CounterApp.CounterModel.deleteCounter(deletionId: Swift.String, completion: (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CounterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andresacevedo/Documents/Cornershop/Countdown/CounterApp/Models/CounterModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "690">
+               </Location>
+               <Location
+                  uuid = "34A642A2-0BB8-4F79-A50A-EBBF954770F2 - d8e2f2383b2cecc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in CounterApp.CounterModel.deleteCounter(deletionId: Swift.String, completion: (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CounterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andresacevedo/Documents/Cornershop/Countdown/CounterApp/Models/CounterModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "82">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25D24F70-B4F7-4C11-919C-B85C379AB8DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CounterApp/Presenters Layer/CreateCounterPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "createCounter(name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "25D24F70-B4F7-4C11-919C-B85C379AB8DB - e2759f5b42f63976"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CounterApp.CreateCounterPresenter.createCounter(name: Swift.String) -&gt; ()"
+                  moduleName = "CounterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andresacevedo/Documents/Cornershop/Countdown/CounterApp/Presenters%20Layer/CreateCounterPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "181">
+               </Location>
+               <Location
+                  uuid = "25D24F70-B4F7-4C11-919C-B85C379AB8DB - cd769051019c73d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in CounterApp.CreateCounterPresenter.createCounter(name: Swift.String) -&gt; ()"
+                  moduleName = "CounterApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andresacevedo/Documents/Cornershop/Countdown/CounterApp/Presenters%20Layer/CreateCounterPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8CB7516F-EC17-4C55-8F5C-E4EF0AA5BC2C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CounterApp/Presenters Layer/CreateCounterPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "createCounter(name:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
