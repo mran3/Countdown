@@ -1,6 +1,6 @@
 # Counters App
 
-Nice application for counting all kinds of things.
+Nice application for counting all kinds of things. Made for Cornershop.
 
 ![](app.gif)
 
